@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rajul Gupta · SOC Analyst · London: Ghost Signal</title>
+<meta name="description" content="Interactive 3D portfolio of Rajul Gupta, SOC and Cyber Security Analyst in London. Home SOC lab (Wazuh, Splunk), ThreatIQ, Check Point firewall lab, certifications.">
+<meta property="og:title" content="London: Ghost Signal · Rajul Gupta, SOC Analyst">
+<meta property="og:description" content="Walk through a night-time London to explore my security projects, SOC lab and certifications.">
+<meta property="og:image" content="./img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#070b12">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="./assets/index-B08ohmy-.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CYXs09GA.css">
+</head>
+<body>
+<canvas id="c" aria-label="3D night-time London portfolio"></canvas>
+
+<div id="loader"><div class="ld-inner">
+  <div class="ld-title">LONDON<span>:</span> <b>GHOST SIGNAL</b></div>
+  <pre id="ld-log" aria-live="polite"></pre>
+  <div class="ld-bar"><i id="ld-fill"></i></div>
+  <div class="ld-pct" id="ld-pct">0%</div>
+</div></div>
+
+<div id="intro" class="hidden"><div class="intro-inner">
+  <div class="kicker">CYBER DEFENCE PORTFOLIO</div>
+  <h1>LONDON<span class="colon">:</span><br><b>GHOST SIGNAL</b></h1>
+  <div class="redline"></div>
+  <p class="who"><strong>Rajul Gupta</strong> · SOC Analyst · Cyber Security Analyst</p>
+  <p class="sub">A cyber defence professional in the heart of London. Walk the street, enter the buildings, read the evidence.</p>
+  <div class="intro-btns">
+    <button id="btn-explore" class="btn primary">▶ Explore the city</button>
+    <button id="btn-simple" class="btn">Simple portfolio</button>
+  </div>
+  <div class="intro-hint">WASD to move · Shift to run · E to interact · drag to look · works on phones too</div>
+</div></div>
+
+<header id="topbar" class="hidden">
+  <div class="brand"><b>RAJUL GUPTA</b><span>SOC Analyst · London · <em>Open to work</em></span></div>
+  <nav>
+    <button id="btn-tour" class="btn small">▶ 60s tour</button>
+    <button id="btn-travel" class="btn small">Fast travel ▾</button>
+    <button id="btn-simple2" class="btn small">Simple view</button>
+    <a class="btn small" href="./Rajul_Gupta_CV.pdf" target="_blank" rel="noopener">CV</a>
+    <a class="btn small" href="https://www.linkedin.com/in/rajulgupta-cybersecurity" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn small" href="https://github.com/rajul97" target="_blank" rel="noopener">GitHub</a>
+    <button id="btn-music" class="btn small icon" aria-label="Music">♪</button>
+    <button id="btn-settings" class="btn small icon" aria-label="Settings">⚙</button>
+  </nav>
+  <div id="travel" class="panel hidden"></div>
+  <div id="settings" class="panel hidden">
+    <div class="row"><label>Music</label><select id="sel-track"><option value="ambient">Dark ambient</option><option value="lofi">Night lo-fi</option><option value="synthwave">Synthwave</option></select></div>
+    <div class="row"><label><input type="checkbox" id="chk-music" checked> Music on</label></div>
+    <div class="row"><label><input type="checkbox" id="chk-rainsfx" checked> Rain sound</label></div>
+    <div class="row"><label><input type="checkbox" id="chk-rain" checked> Rain</label></div>
+    <div class="row"><label><input type="checkbox" id="chk-fx" checked> Glow effects</label></div>
+    <div class="row"><button id="btn-photo" class="btn small">📷 Save photo</button></div>
+  </div>
+</header>
+
+<div id="hud" class="hidden">
+  <div id="missions"><div class="m-title">CASE GS-001 · <span id="m-count">0/6</span></div><ul id="m-list"></ul><div id="m-keys">Keycards 0/5</div></div>
+  <canvas id="minimap" width="360" height="360" aria-hidden="true"></canvas>
+  <div id="prompt" class="hidden"></div>
+  <div id="hint">WASD move · Shift run · E interact · M music · drag to look</div>
+</div>
+<div id="toasts"></div>
+
+<div id="modal" class="hidden" role="dialog" aria-modal="true"><div class="term">
+  <div class="term-head"><i></i><i></i><i></i><span id="term-path">ghost@london:~$</span><button id="term-close" aria-label="Close">✕</button></div>
+  <div class="term-body" id="term-body"></div>
+  <div class="term-foot" id="term-foot"></div>
+</div></div>
+<div id="lightbox" class="hidden"><img alt=""><div class="cap"></div></div>
+
+<div id="touch" class="hidden">
+  <div id="joy"><i id="joy-knob"></i></div>
+  <button id="t-run" class="tbtn">RUN</button>
+  <button id="t-act" class="tbtn act hidden">OPEN</button>
+</div>
+
+<div id="simple" class="hidden"></div>
+<noscript><main style="padding:2rem;color:#dbe7f3;background:#070b12;font-family:sans-serif"><h1>Rajul Gupta</h1><p>SOC Analyst and Cyber Security Analyst, London. Home SOC lab (Wazuh, Splunk, Kali), ThreatIQ (AI threat intelligence), Check Point firewall lab. Email: rajul.gupta.security@gmail.com. GitHub: github.com/rajul97. LinkedIn: linkedin.com/in/rajulgupta-cybersecurity.</p></main></noscript>
+</body>
+</html>

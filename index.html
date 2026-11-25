@@ -13,8 +13,8 @@
 <meta name="theme-color" content="#070b12">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="./assets/index-B08ohmy-.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-CYXs09GA.css">
+  <script type="module" crossorigin src="./assets/index-Xcp0kOJy.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BKFak57K.css">
 </head>
 <body>
 <canvas id="c" aria-label="3D night-time London portfolio"></canvas>
@@ -58,7 +58,7 @@
     <div class="row"><label><input type="checkbox" id="chk-rainsfx" checked> Rain sound</label></div>
     <div class="row"><label><input type="checkbox" id="chk-rain" checked> Rain</label></div>
     <div class="row"><label><input type="checkbox" id="chk-fx" checked> Glow effects</label></div>
-    <div class="row"><button id="btn-photo" class="btn small">📷 Save photo</button></div>
+    <div class="row"><button id="btn-photo" class="btn small">📷 Save photo</button><button id="btn-reset" class="btn small">Reset progress</button></div>
   </div>
 </header>
 
@@ -69,6 +69,8 @@
   <div id="hint">WASD move · Shift run · E interact · M music · drag to look</div>
 </div>
 <div id="toasts"></div>
+<div id="ending" class="hidden"><div class="end-box"><div class="kicker">CASE GS-001 · ALL FILES REVIEWED</div><h2>CASE <b>CLOSED</b></h2><p>You have seen the evidence. Rajul Gupta is a SOC and security analyst in London, open to work and willing to undergo UK security vetting.</p><div class="intro-btns"><a class="btn primary" href="mailto:rajul.gupta.security@gmail.com">✉ Email Rajul</a><a class="btn" href="./Rajul_Gupta_CV.pdf" target="_blank" rel="noopener">Download CV</a><a class="btn" href="https://www.linkedin.com/in/rajulgupta-cybersecurity" target="_blank" rel="noopener">LinkedIn</a><button class="btn" id="end-continue">Keep exploring</button></div></div></div>
+<div id="dialog" class="hidden" role="dialog" aria-live="polite"><div class="dl-who"></div><div class="dl-text"></div><div class="dl-choices"></div></div>
 
 <div id="modal" class="hidden" role="dialog" aria-modal="true"><div class="term">
   <div class="term-head"><i></i><i></i><i></i><span id="term-path">ghost@london:~$</span><button id="term-close" aria-label="Close">✕</button></div>
